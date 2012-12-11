@@ -1,12 +1,12 @@
 Name:		recoverjpeg
 Version:	2.1.1
-Release:	1
+Release:	2
 Summary:	JFIF/JPEG File Recovery Tool
 Source0:	https://github.com/downloads/samueltardieu/recoverjpeg/%{name}-%{version}.tar.gz
 URL:		http://www.rfc1149.net/devel/recoverjpeg
 Group:		Graphics
 License:	GPL
-Requires:	ImageMagick
+Requires:	imagemagick
 BuildRequires:	make gcc
 BuildRequires:	autoconf automake libtool 
 
@@ -35,3 +35,14 @@ autoreconf -fiv
 %doc %{_mandir}/man1/recoverjpeg.1*
 %doc %{_mandir}/man1/sort-pictures.1*
 %doc %{_mandir}/man1/recovermov.1*
+
+
+%changelog
+* Tue May 29 2012 Alexander Khrukin <akhrukin@mandriva.org> 2.1.1-1
++ Revision: 801100
+- version update 2.1.1
+
+* Tue Dec 13 2011 Alexander Khrukin <akhrukin@mandriva.org> 2.0-1
++ Revision: 740661
+- imported package recoverjpeg
+
