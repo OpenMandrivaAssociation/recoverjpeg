@@ -1,6 +1,6 @@
 Name:		recoverjpeg
-Version:	2.1.1
-Release:	2
+Version:	2.2.1
+Release:	1
 Summary:	JFIF/JPEG File Recovery Tool
 Source0:	https://github.com/downloads/samueltardieu/recoverjpeg/%{name}-%{version}.tar.gz
 URL:		http://www.rfc1149.net/devel/recoverjpeg
