@@ -1,8 +1,8 @@
 Name:		recoverjpeg
-Version:	2.2.1
-Release:	2
+Version:	2.6.3
+Release:	1
 Summary:	JFIF/JPEG File Recovery Tool
-Source0:	https://github.com/downloads/samueltardieu/recoverjpeg/%{name}-%{version}.tar.gz
+Source0:	https://rfc1149.net/download/recoverjpeg/recoverjpeg-%{version}.tar.gz
 URL:		http://www.rfc1149.net/devel/recoverjpeg
 Group:		Graphics
 License:	GPL
@@ -16,15 +16,15 @@ be useful if you mistakenly overwrite a partition or if a device such as a
 digital camera memory card is bogus.
 
 %prep
-%setup -q
+%autosetup -p1
+autoreconf -fiv
+%configure
 
 %build
-autoreconf -fiv
-%configure2_5x
-%make
+%make_build
 
 %install
-%makeinstall_std
+%make_install
 
 %files
 %doc COPYING
@@ -33,16 +33,6 @@ autoreconf -fiv
 %{_bindir}/remove-duplicates
 %{_bindir}/sort-pictures
 %doc %{_mandir}/man1/recoverjpeg.1*
+%doc %{_mandir}/man1/remove-duplicates.1*
 %doc %{_mandir}/man1/sort-pictures.1*
 %doc %{_mandir}/man1/recovermov.1*
-
-
-%changelog
-* Tue May 29 2012 Alexander Khrukin <akhrukin@mandriva.org> 2.1.1-1
-+ Revision: 801100
-- version update 2.1.1
-
-* Tue Dec 13 2011 Alexander Khrukin <akhrukin@mandriva.org> 2.0-1
-+ Revision: 740661
-- imported package recoverjpeg
-

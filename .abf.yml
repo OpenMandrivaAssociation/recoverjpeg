@@ -1,4 +1,2 @@
-removed_sources:
-  recoverjpeg-2.1.1.tar.gz: 0703ade03a735e2538c9ab87a160edf4bd388b8d
 sources:
-  recoverjpeg-2.2.1.tar.gz: faf4c9a324ee2697289143668514873f27d75ab6
+  recoverjpeg-2.6.3.tar.gz: dd3eb4e7e055d2143d5f965d1ea4e9331bd979c8
