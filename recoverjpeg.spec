@@ -3,7 +3,7 @@ Version:	2.6.3
 Release:	1
 Summary:	JFIF/JPEG File Recovery Tool
 Source0:	https://rfc1149.net/download/recoverjpeg/recoverjpeg-%{version}.tar.gz
-URL:		http://www.rfc1149.net/devel/recoverjpeg
+URL:		https://www.rfc1149.net/devel/recoverjpeg
 Group:		Graphics
 License:	GPL
 Requires:	imagemagick
